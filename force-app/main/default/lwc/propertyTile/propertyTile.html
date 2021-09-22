@@ -1,0 +1,30 @@
+<template>
+    <template if:true={isPropertyFound}>
+    <lightning-card title={propertyName}>
+        <div class="slds-grid slds-wrap">
+            <div class="slds-col slds-size_1-of-2 slds-align-absolute_center">
+                <lightning-formatted-rich-text value={propImage}></lightning-formatted-rich-text>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <div class="slds-size_1-of-1">
+                    <div class="propertyTile">
+                        <span class="label">Owner</span>
+                        <lightning-formatted-text
+                        value={propOwner}
+                      ></lightning-formatted-text>
+                        </div>
+                    </div>
+                    <div class="slds-size_1-of-1">
+                    <div class="propertyTile">
+                        <span class="label">Carper Area</span>
+                        <lightning-formatted-number
+                        value={carpetArea}
+                      ></lightning-formatted-number>
+                        </div>
+                    </div>
+                    </div>
+
+</div>
+    </lightning-card>
+    </template>
+</template>

@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Search Results">
+      <template if:true={isProp}>
+        <lightning-layout multiple-rows="true">
+          <!-- <p>{test}</p> -->
+          <template for:each={properties} for:item="property">
+            <lightning-layout-item
+              key={property.Id}
+              padding="around-small"
+              size="12"
+              large-device-size="4"
+              medium-device-size="6"
+              small-device-size="3"
+            >
+              <c-property-tile prop={property}></c-property-tile>
+            </lightning-layout-item>
+          </template>
+        </lightning-layout>
+      </template>
+      </lightning-card>
+</template>
