@@ -11,7 +11,7 @@ export default class PropertySearch extends LightningElement {
     city;
     countryOptions;
     cityOptions;
-    
+    //commit to feature branch
     @wire(getObjectInfo, { objectApiName: PROPERTY_OBJECT }) propertyMetadata;
     @wire(getPicklistValues, { recordTypeId: '$propertyMetadata.data.defaultRecordTypeId', fieldApiName: COUNTRY_FIELD })countryValues({data,error}){
         if(data){
